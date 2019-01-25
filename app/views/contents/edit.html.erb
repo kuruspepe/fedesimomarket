@@ -1,0 +1,8 @@
+<div class="container">
+	<h1 class="center">Modifica <%= @content.titolo %> </h1>
+
+	<%= render 'form', content: @content %>
+
+	<%= link_to 'Mostra', @content %>
+	<%= link_to 'Torna', contents_path %>
+</div>

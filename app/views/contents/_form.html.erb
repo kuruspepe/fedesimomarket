@@ -1,0 +1,49 @@
+<%= form_for @content, html: { multipart: true } do |form| %>
+<% if content.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(content.errors.count, "error") %> prohibited this content from being saved:</h2>
+
+      <ul>
+      <% content.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titolo %>
+    <%= form.text_field :titolo, id: :content_titolo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descrizione %>
+    <%= form.text_area :descrizione, id: :content_descrizione, class: "materialize-textarea" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prezzo_min_50_cent %>
+    <%= form.text_field :price, id: :content_price %>
+  </div>
+  <div class="row">
+    <div class="col s6">
+      <div class="field">
+        <p class="center blue-text text-darken-1">Immagine copertina</p>
+        <%= form.file_field :cover %>
+      </div>
+    </div>
+    <div class="col s6">
+      <div class="field">
+        <p class="center blue-text text-darken-1">Carica un file da allegare</p>
+        <%= form.file_field :allegato %>
+      </div>
+    </div>
+   </div> 
+   <div class="actions">
+        <%= form.submit :conferma, class: "btn blue darken-1 btn-devise" %>
+   </div>
+   
+  </div>
+<% end %>
+
+<br>

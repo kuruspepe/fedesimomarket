@@ -1,0 +1,95 @@
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          
+        </div>
+
+      </li>
+
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          
+        </div>
+      </li>
+        
+      
+    </ul>
+    
+  </div>
+  <br>
+   
+  <div class="container center">
+    		<%= link_to "Vai ai contenuti", contents_path, class: "btn blue darken-1 btn-devise" %>
+  </div>
+  <div class="container">
+    <div class="section margine-sezione">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework .</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+  </div>
+<script type="text/javascript">
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+    $('.slider').height(390);
+    $('.slider').indicators(false);
+  });
+        
+</script>

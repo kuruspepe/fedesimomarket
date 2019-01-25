@@ -1,0 +1,38 @@
+@import "materialize";
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+h1 {
+  font-size: 3em;
+}
+main {
+    flex: 1 0 auto;
+    margin-top: -3.5%;
+    margin-bottom: -5%;
+}
+.margine-sezione {
+  margin-top: -3%;
+}
+.btn-devise {
+  	width: 100%;
+  	text-color: #ffffff;
+}
+.mostra_titolo {
+    margin-top: 0;
+    font-size: 3.4em;
+}
+.mostra_img {
+    padding-right: 5%;
+}
+.card-image {
+  height: 160px;
+}
+.titolo_carta {
+  font-size: 1em;
+}
+.pagination li.active {
+  color: #fff;
+  background-color: #1E88E5;
+}
