@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProvaLista</title>
-    
-  
+    <title>ProvaLista</title> 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -14,16 +12,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
-
   <body>
-    
-          
-  	
-    
-    
+   
     <%= render "layouts/header" %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="container">
+      <% flash.each do |type, message| %>
+      <script>
+        M.toast({html: '<%= message %>'})
+      </script>
+      <% end %>
+    </div>
     <main>
       <%= yield %>
     </main>

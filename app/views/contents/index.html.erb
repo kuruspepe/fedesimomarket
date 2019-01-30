@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-<!--<h1>Articoli</h1>-->
+<br><br><br>
 <div class="row container">
   <% @contents.each do |content| %>
     <div class="col s3">
@@ -16,7 +15,7 @@
             </span>
             <div>
               <span><%= content.user.name %></span>
-              <span class="right"><p>€ <%= content.price %></p></span>
+              <span class="right"><%= number_to_currency(content.price) %></span>
             </div>
             <br>
             <div class="center"><%= link_to 'Scopri', content, class: "btn blue darken-1" %></div>
