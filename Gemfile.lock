@@ -224,7 +224,8 @@ GEM
 
 PLATFORMS
   ruby
-  
+  x86-mingw32
+
 
 DEPENDENCIES
   aasm
