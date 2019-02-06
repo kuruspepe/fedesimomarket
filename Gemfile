@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.6.1'
+
 
 
 git_source(:github) do |repo_name|
@@ -12,6 +12,7 @@ end
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 
 #gem 'sqlite3'
+
 
 gem 'puma', '~> 3.7'
 
