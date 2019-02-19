@@ -45,7 +45,12 @@
 
 <%= link_to 'Torna', contents_path%>
 
+
 <% if @content.user == current_user %>
-	<%= link_to 'Modifica', edit_content_path(@content) %> |
-<% end %>
+              <br>
+              <div class="center">
+                <p><%= link_to 'Modifica', edit_content_path(@content) %> | 
+                <%= link_to 'Elimina', @content, method: :delete, data: { confirm: 'Sicuro di eliminare?' } %></p>
+              </div>
+            <% end %>
 </div>

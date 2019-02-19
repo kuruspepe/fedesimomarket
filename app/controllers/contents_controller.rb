@@ -60,11 +60,11 @@ class ContentsController < ApplicationController
     def set_content
       @content = Content.friendly.find(params[:id])
     end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
     def content_params
       params.require(:content).permit(:titolo, :descrizione, :price, :cover, :allegato)
     end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    
     def check_user
       if current_user != @content.user
         redirect_to root_url, alert: "Non hai i diritti necessari"

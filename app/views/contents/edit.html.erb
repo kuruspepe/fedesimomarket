@@ -1,8 +1,11 @@
-<div class="container">
+<br>
+<div class="row container center">
+      <div class="col s12 l8 offset-l2">
 	<h1 class="center">Modifica <%= @content.titolo %> </h1>
 
 	<%= render 'form', content: @content %>
 
-	<%= link_to 'Mostra', @content %>
-	<%= link_to 'Torna', contents_path %>
 </div>
+</div>
+
+<p class="center"><%= link_to 'Mostra', @content %> | <%= link_to 'Torna', contents_path %></p>
