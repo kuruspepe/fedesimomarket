@@ -16,13 +16,13 @@ gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 
 gem 'puma', '~> 3.7'
 
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 
 gem 'uglifier', '>= 1.3.0'
 
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.8', '>= 2.8.0'
 
 gem 'materialize-sass', '~> 1.0.0'
 
@@ -31,7 +31,7 @@ gem 'devise'
 gem "paperclip", "~> 6.0.0"
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-materialize'
-gem 'friendly_id', '~> 5.2.4'
+gem 'friendly_id', '~> 5.2.5'
 
 
 gem 'dotenv-rails', groups: [:development, :test]
@@ -54,7 +54,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.7.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
