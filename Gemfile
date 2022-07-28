@@ -9,7 +9,7 @@ end
 
 
 
-gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 #gem 'sqlite3'
 
@@ -31,7 +31,7 @@ gem 'devise'
 gem "paperclip", "~> 6.0.0"
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-materialize'
-gem 'friendly_id', '~> 5.2.4'
+gem 'friendly_id', '~> 5.2.5'
 
 
 gem 'dotenv-rails', groups: [:development, :test]
