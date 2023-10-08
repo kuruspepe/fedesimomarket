@@ -9,7 +9,7 @@ end
 
 
 
-gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
+gem 'rails', '~> 7.1.0'
 
 #gem 'sqlite3'
 
