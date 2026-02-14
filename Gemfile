@@ -36,7 +36,7 @@ gem 'friendly_id', '~> 5.2.4'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
-gem 'stripe'
+gem 'stripe', '>= 5.0.0'
 gem 'aasm'
 gem 'thin'
 group :development, :test do
